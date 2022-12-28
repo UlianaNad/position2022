@@ -1,0 +1,45 @@
+body{
+    background-color: aliceblue;
+}
+.wrapper{
+    height: 850px;
+    background-color: aqua;
+    margin: 0 auto;
+    position: relative;
+}
+.block{
+    position: fixed;
+    background-color: blueviolet;
+    width: 60px;
+    height: 40px;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+}
+.block img{
+    padding: 5px;
+}
+@media screen and (max-width:786px){
+    .block{
+        position: absolute;
+        background-color: blueviolet;
+        height: auto;
+        width: 70px;
+        top: 20px;
+        bottom: 20px;
+        
+    }
+}
+
+@media screen and (max-width:568px){
+    .block{
+        position: absolute;
+        background-color: blueviolet;
+        height: 50px;
+        width: auto;
+        right: 20px;
+        left: 20px;
+        top: auto;
+        bottom: 20px;
+    }
+}
